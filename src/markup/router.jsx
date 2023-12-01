@@ -62,7 +62,7 @@ class Router extends Component {
         return (
             
 			//<BrowserRouter>
-			<BrowserRouter basename={'react/demo'}>
+			<BrowserRouter >
                 <div className="page-wraper">
                     <Switch>
                         <Route path='/' exact component={Index} />
