@@ -3,7 +3,22 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Index from './pages/index';
 import About1 from './pages/about-1';
 import About2 from './pages/about-2';
-
+import BlogGrid2 from './pages/blog-grid-2';
+import BlogGrid2Sidebar from './pages/blog-grid-2-sidebar';
+import BlogGrid2SidebarLeft from './pages/blog-grid-2-sidebar-left';
+import BlogGrid3 from './pages/blog-grid-3';
+import BlogGrid3Sidebar from './pages/blog-grid-3-sidebar';
+import BlogGrid3SidebarLeft from './pages/blog-grid-3-sidebar-left';
+import BlogGrid4 from './pages/blog-grid-4';
+import BlogHalfImg from './pages/blog-half-img';
+import BlogHalfImgSidebarLeft from './pages/blog-half-img-left-sidebar';
+import BlogHalfImgSidebar from './pages/blog-half-img-sidebar';
+import BlogLargeImg from './pages/blog-large-img';
+import BlogLargeImgSidebarLeft from './pages/blog-large-img-left-sidebar';
+import BlogLargeImgSidebar from './pages/blog-large-img-sidebar';
+import BlogSingle from './pages/blog-single';
+import BlogSingleSidebarLeft from './pages/blog-single-left-sidebar';
+import BlogSingleSidebar from './pages/blog-single-sidebar';
 import ComingSoon1 from './pages/coming-soon-1';
 import Contact1 from './pages/contact-1';
 import Contact2 from './pages/contact-2';
@@ -23,7 +38,14 @@ import PrivacyPolicy from './pages/privacy-policy';
 import Services1 from './pages/services-1';
 import Services2 from './pages/services-2';
 import ServicesDetails from './pages/services-details';
-
+import ShopCart from './pages/shop-cart';
+import ShopCheckout from './pages/shop-checkout';
+import ShopLogin from './pages/shop-login';
+import shopProductDetails from './pages/shop-product-details';
+import ShopRegister from './pages/shop-register';
+import ShopSidebar from './pages/shop-sidebar';
+import ShopWishlist from './pages/shop-wishlist';
+import Shop from './pages/shop';
 import Team1 from './pages/team-1';
 import Team2 from './pages/team-2';
 import Index2 from './pages/index-2';
@@ -62,13 +84,30 @@ class Router extends Component {
         return (
             
 			//<BrowserRouter>
-			<BrowserRouter >
+			<BrowserRouter basename={'react/demo'}>
                 <div className="page-wraper">
                     <Switch>
                         <Route path='/' exact component={Index} />
                         <Route path='/about-1' component={About1} />
                         <Route path='/about-2' component={About2} />
-                   
+                        <Route path='/blog-grid-2-sidebar' component={BlogGrid2Sidebar} />
+                        <Route path='/blog-grid-3' component={BlogGrid3} />
+						<Route path='/blog-grid-2' component={BlogGrid2} />
+						<Route path='/blog-grid-2-sidebar' component={BlogGrid2Sidebar} />
+						<Route path='/blog-grid-2-sidebar-left' component={BlogGrid2SidebarLeft} />
+						<Route path='/blog-grid-3' component={BlogGrid3} />
+						<Route path='/blog-grid-3-sidebar' component={BlogGrid3Sidebar} />
+						<Route path='/blog-grid-3-sidebar-left' component={BlogGrid3SidebarLeft} />
+						<Route path='/blog-grid-4' component={BlogGrid4} />
+						<Route path='/blog-half-img' component={BlogHalfImg} />
+						<Route path='/blog-half-img-left-sidebar' component={BlogHalfImgSidebarLeft} />
+						<Route path='/blog-half-img-sidebar' component={BlogHalfImgSidebar} />
+						<Route path='/blog-large-img' component={BlogLargeImg} />
+						<Route path='/blog-large-img-left-sidebar' component={BlogLargeImgSidebarLeft} />
+						<Route path='/blog-large-img-sidebar' component={BlogLargeImgSidebar} />
+						<Route path='/blog-single' component={BlogSingle} />
+						<Route path='/blog-single-left-sidebar' component={BlogSingleSidebarLeft} />
+						<Route path='/blog-single-sidebar' component={BlogSingleSidebar} />
 						<Route path='/coming-soon-1' component={ComingSoon1} />
                         <Route path='/contact-1' component={Contact1} />
                         <Route path='/contact-2' component={Contact2} />
@@ -88,7 +127,14 @@ class Router extends Component {
                         <Route path='/services-1' component={Services1} />
                         <Route path='/services-2' component={Services2} />
                         <Route path='/services-details' component={ServicesDetails} />
-                      
+                        <Route path='/shop-cart' component={ShopCart} />
+                        <Route path='/shop-checkout' component={ShopCheckout} />
+                        <Route path='/shop-login' component={ShopLogin} />
+                        <Route path='/shop-product-details' component={shopProductDetails} />
+                        <Route path='/shop-register' component={ShopRegister} />
+                        <Route path='/shop-sidebar' component={ShopSidebar} />
+                        <Route path='/shop-wishlist' component={ShopWishlist} />
+                        <Route path='/shop' component={Shop} />
                         <Route path='/team-1' component={Team1} />
                         <Route path='/team-2' component={Team2} />
                         <Route path='/index-2' component={Index2} />

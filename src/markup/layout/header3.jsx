@@ -158,7 +158,56 @@ class Header3 extends Component {
 												</li>
 											</ul>
 										</li>
-                                        
+                                        <li>
+                                            <Link to="#">Shop<i className="fa fa-chevron-down"></i></Link>
+                                            <ul className="sub-menu">
+                                                <li><Link to="/shop">Shop</Link></li>
+                                                <li><Link to="/shop-sidebar">Shop Sidebar</Link></li>
+                                                <li><Link to="/shop-product-details">Product Details</Link></li>
+                                                <li><Link to="/shop-cart">Cart</Link></li>
+                                                <li><Link to="/shop-wishlist">Wishlist</Link></li>
+                                                <li><Link to="/shop-checkout">Checkout</Link></li>
+                                                <li><Link to="/shop-login">Login</Link></li>
+                                                <li><Link to="/shop-register">Register</Link></li>
+                                            </ul>
+                                        </li>
+                                        <li className="has-mega-menu"> 
+											<Link to={'#'}>Blog<i className="fa fa-chevron-down"></i></Link>
+											<ul className="mega-menu">
+												<li> <Link to={'#'}>Blog</Link>
+													<ul>
+														<li><Link to={'/blog-half-img'}>Half image</Link></li>
+														<li><Link to={'/blog-half-img-sidebar'}>Half image sidebar</Link></li>
+														<li><Link to={'/blog-half-img-left-sidebar'}>Half image sidebar left</Link></li>
+														<li><Link to={'/blog-large-img'}>Large image</Link></li>
+													</ul>
+												</li>
+												<li> <Link to={'#'}>Blog</Link>
+													<ul>
+														<li><Link to={'blog-large-img-sidebar'}>Large image sidebar</Link></li>
+														<li><Link to={'blog-large-img-left-sidebar'}>Large image sidebar left</Link></li>
+														<li><Link to={'blog-grid-2'}>Grid 2</Link></li>
+														<li><Link to={'blog-grid-2-sidebar'}>Grid 2 sidebar</Link></li>
+													</ul>
+												</li>
+												<li> <Link to={'#'}>Blog</Link>
+													<ul>
+														<li><Link to={'blog-grid-2-sidebar-left'}>Grid 2 sidebar left</Link></li>
+														<li><Link to={'blog-grid-3'}>Grid 3</Link></li>
+														<li><Link to={'blog-grid-3-sidebar'}>Grid 3 sidebar</Link></li>
+														<li><Link to={'blog-grid-3-sidebar-left'}>Grid 3 sidebar left</Link></li>
+													</ul>
+												</li>
+												<li> <Link to={'#'}>Blog</Link>
+													<ul>
+														<li><Link to={'blog-grid-4'}>Grid 4</Link></li>
+														<li><Link to={'blog-single'}>Single</Link></li>
+														<li><Link to={'blog-single-sidebar'}>Single sidebar</Link></li>
+														<li><Link to={'blog-single-left-sidebar'}>Single sidebar right</Link></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
 										<li className="has-mega-menu"> <Link to={'#'}>Element<i className="fa fa-chevron-down"></i></Link>
 											<ul className="mega-menu">
 												<li><Link to={'#'}>Element</Link>
